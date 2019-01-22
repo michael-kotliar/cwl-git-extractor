@@ -6,8 +6,8 @@ from cwl_git_extractor.utils.helpers import normalize_args, export_to_file
 
 
 def get_parser():
-    parser = argparse.ArgumentParser(description='CWL Git CLI', add_help=True)
-    parser.add_argument("-r", "--repo", help="Path to Git repository", required=True)
+    parser = argparse.ArgumentParser(description='CWL Git Extractor', add_help=True)
+    parser.add_argument("-r", "--repo",     help="Path to Git repository", required=True)
     parser.add_argument("-f", "--file",     help="Relative path to the cwl file", required=True)
     parser.add_argument("-s", "--sha",      help="SHA hash of git commit",        required=True)
     parser.add_argument("-o", "--output",   help="Output file name",              default="workflow.cwl")
